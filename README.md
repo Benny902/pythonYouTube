@@ -3,6 +3,8 @@
 
 ### Demo - (soon)
 
+---
+
 to run it locally (http://localhost:5100/):
 ```
 pip install -r requirements.txt
