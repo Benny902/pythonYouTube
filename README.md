@@ -3,7 +3,7 @@
 
 ### Demo - (soon)
 
-to run it locally:
+to run it locally (http://localhost:5100/):
 ```
 pip install -r requirements.txt
 python app.py

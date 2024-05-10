@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Audio / Video downloader</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>YouTube Audio / Video downloader</h2>
+        <form action="/download" method="post">
+            <label for="video_link"></label><br>
+            <input placeholder="Enter YouTube Video Link:" type="text" id="video_link" name="video_link"><br><br>
+            <div class="btn-container">
+                <input type="submit" name="download_type" value="Download Video">
+                <input type="submit" name="download_type" value="Download Audio">
+            </div>
+        </form>
+        <br><p></p>
+        
+        <h5><a href="https://github.com/Benny902/pythonYouTube">Python Flask webapp - Created by Benny ♕ (Click for GitHub Source Code)</a></h5>
+    </div>
+</body>
+</html>
