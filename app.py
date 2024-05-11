@@ -1,7 +1,11 @@
 from flask import Flask, render_template, request, send_file
 from pytube import YouTube
+import OS
+
 
 app = Flask(__name__, static_url_path='/static')
+port = int(os.environ.get('PORT', 5000))
+
 
 @app.route('/')
 def index():
@@ -31,4 +35,4 @@ def download():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, port=5000)
+    app.run(host='0.0.0.0', debug=True, port=port)
