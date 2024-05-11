@@ -19,7 +19,7 @@ def download():
         download_type = request.form['download_type']
         
         # Download video or audio based on the selected type
-        yt = YouTube(video_link, use_oauth=False, allow_oauth_cache=True)
+        yt = YouTube(video_link)
         if download_type == 'Download Video':
             stream = yt.streams.get_highest_resolution()
         elif download_type == 'Download Audio':
