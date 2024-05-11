@@ -6,7 +6,7 @@
 
 ---
 
-to run it locally (http://localhost:5100/):
+to run it locally (http://localhost:5000/):
 ```
 pip install -r requirements.txt
 python app.py
