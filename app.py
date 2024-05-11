@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, send_file
 from pytube import YouTube
 import os
 
-
+#
 app = Flask(__name__, static_url_path='/static')
 port = int(os.environ.get('PORT', 5000))
 
@@ -19,7 +19,7 @@ def download():
         download_type = request.form['download_type']
         
         # Download video or audio based on the selected type
-        yt = YouTube(video_link)
+        yt = YouTube(video_link, use_oauth=True, allow_oauth_cache=True)
         if download_type == 'Download Video':
             stream = yt.streams.get_highest_resolution()
         elif download_type == 'Download Audio':
